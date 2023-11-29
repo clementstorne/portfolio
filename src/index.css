@@ -25,7 +25,7 @@
   }
 
   h2 {
-    @apply text-4xl;
+    @apply text-2xl md:text-4xl;
   }
 
   h3 {
@@ -44,6 +44,9 @@
     @apply text-sm;
   }
 
+  section {
+  }
+
   #hero {
     background-image: linear-gradient(
         rgba(16, 125, 152, 0.85),
@@ -57,6 +60,9 @@
 }
 
 @layer components {
+  .techno-item {
+    @apply flex items-center mb-5 md:mb-10;
+  }
 }
 
 @layer utilities {
@@ -65,7 +71,11 @@
   }
 
   .full-size {
-    width: 100vw;
-    height: 100svh;
+    width: 100%;
+    min-height: 100svh;
+  }
+
+  .favorite {
+    @apply text-cyan-light-11 font-bold;
   }
 }

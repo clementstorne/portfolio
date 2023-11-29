@@ -4,7 +4,7 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="full-size flex flex-col flex-nowrap justify-center items-center bg-cyan-light-11 text-cyan-light-1"
+      className="full-size flex flex-col flex-nowrap justify-center items-center text-cyan-light-1"
     >
       <img
         src="clement-storne.jpg"
