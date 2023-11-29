@@ -4,50 +4,68 @@
 
 @layer base {
   body {
-    font-family: "Kodchasan";
-    font-weight: 400;
+    @apply font-body font-normal;
   }
 
-  h1,
+  h1 {
+    transform: rotate(-5deg);
+    @apply font-title text-3xl md:text-5xl text-center;
+  }
+
   h2,
   h3,
   h4,
   h5 {
-    font-family: "Russo One";
-    font-weight: 700;
+    @apply font-heading font-bold m-0;
   }
 
   html {
     font-size: 100%;
-  }
-
-  h1 {
-    font-size: 4.21rem;
+    @apply text-sm md:text-base;
   }
 
   h2 {
-    font-size: 3.158rem;
+    @apply text-4xl;
   }
 
   h3 {
-    font-size: 2.369rem;
+    @apply text-3xl;
   }
 
   h4 {
-    font-size: 1.777rem;
+    @apply text-xl md:text-2xl;
   }
 
   h5 {
-    font-size: 1.333rem;
+    @apply text-xl;
   }
 
   small {
-    font-size: 0.75rem;
+    @apply text-sm;
+  }
+
+  #hero {
+    background-image: linear-gradient(
+        rgba(16, 125, 152, 0.85),
+        rgba(16, 125, 152, 0.65)
+      ),
+      url(/hero-background.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 }
 
+@layer components {
+}
+
 @layer utilities {
-  .strong {
-    font-weight: 700;
+  .circle {
+    border-radius: 50%;
+  }
+
+  .full-size {
+    width: 100vw;
+    height: 100svh;
   }
 }
