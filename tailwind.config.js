@@ -25,6 +25,10 @@ export default {
       280: "280px",
       350: "350px",
     },
+    borderRadius: {
+      DEFAULT: "10px",
+      full: "9999px",
+    },
     colors: {
       "cyan-light": {
         1: "#FAFDFE",

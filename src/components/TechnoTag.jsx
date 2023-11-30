@@ -16,5 +16,4 @@ export default function TechnoTag(props) {
 
 TechnoTag.propTypes = {
   techno: PropTypes.string.isRequired,
-  favorite: PropTypes.bool,
 };

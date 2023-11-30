@@ -80,12 +80,16 @@
 
 @layer components {
   .link-button {
-    box-sizing: border-box;
     border-radius: 41px;
-    @apply flex items-center px-20 py-10 font-bold text-cyan-light-1 bg-cyan-light-11 hover:px-16 
-    hover:py-6 hover:text-cyan-light-12 hover:bg-cyan-light-1 hover:border-4 hover:border-cyan-light-8 
+    @apply flex justify-center items-center px-20 py-10 font-bold text-cyan-light-1 bg-cyan-light-11 
+    hover:px-16 hover:py-6 hover:text-cyan-light-12 hover:bg-cyan-light-1 hover:border-4 hover:border-cyan-light-8 
     focus:px-16 focus:py-6 focus:text-cyan-light-12 focus:bg-cyan-light-1 focus:border-4 focus:border-cyan-light-8 focus:outline-none
     focus-visible:px-16 focus-visible:py-6 focus-visible:text-cyan-light-12 focus-visible:bg-cyan-light-1 focus-visible:border-4 focus-visible:border-cyan-light-8 focus-visible:outline-none;
+  }
+
+  .project-card {
+    @apply flex flex-col flex-nowrap justify-center items-center py-20 px-10 rounded text-center bg-cyan-light-1 drop-shadow-base hover:drop-shadow-xl
+    md:py-40 md:px-20;
   }
 
   .techno-item {
