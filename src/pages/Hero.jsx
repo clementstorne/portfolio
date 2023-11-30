@@ -2,11 +2,11 @@ import { SiLinkedin, SiGithub, SiX } from "react-icons/si";
 
 export default function Hero() {
   return (
-    <section id="hero" className="text-cyan-light-1">
+    <section id="hero" className="justify-center text-cyan-light-1">
       <img
         src="clement-storne.jpg"
         alt="Photo de profil de Clément STORNE"
-        className="circle w-150 h-150 md:w-200 md:h-200 drop-shadow-base"
+        className="rounded-full w-150 h-150 md:w-200 md:h-200 drop-shadow-base"
       />
       <h1 className="mb-5 md:mb-10 drop-shadow-xl">- Clément Storne- </h1>
       <h4 className="mt-5 md:mt-10 mb-20 md:mb-30 drop-shadow-base">
