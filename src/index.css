@@ -49,10 +49,21 @@
 
   #hero {
     background-image: linear-gradient(
-        rgba(16, 125, 152, 0.85),
-        rgba(16, 125, 152, 0.65)
+        rgba(16, 125, 152, 0.5),
+        rgba(16, 125, 152, 0.95)
       ),
       url(/hero-background.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  #techno {
+    background-image: linear-gradient(
+        rgba(250, 253, 254, 0.85),
+        rgba(250, 253, 254, 0.95)
+      ),
+      url(/techno-background.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;

@@ -1,30 +1,37 @@
-import {
-  SiJavascript,
-  SiTypescript,
-  SiReact,
-  SiVuedotjs,
-  SiSass,
-  SiBootstrap,
-  SiTailwindcss,
-  SiRedux,
-  SiVite,
-  SiD3Dotjs,
-  SiJest,
-  SiVitest,
-  SiNodedotjs,
-  SiExpress,
-  SiSequelize,
-  SiPrisma,
-  SiMongodb,
-  SiMysql,
-  SiGithub,
-  SiFigma,
-  SiNetlify,
-  SiPostman,
-  SiAdobeillustrator,
-} from "react-icons/si";
+import TechnoItem from "../components/TechnoItem";
 
 export default function Technologies() {
+  const progTechnos = [
+    { name: "JS", fav: true },
+    { name: "TS", fav: true },
+  ];
+  const frontTechnos = [
+    { name: "react", fav: true },
+    { name: "vue", fav: false },
+    { name: "sass", fav: false },
+    { name: "bootstrap", fav: false },
+    { name: "tailwind", fav: true },
+    { name: "redux", fav: true },
+    { name: "vite", fav: true },
+    { name: "d3js", fav: false },
+    { name: "jest", fav: false },
+    { name: "vitest", fav: true },
+  ];
+  const backTechnos = [
+    { name: "node", fav: false },
+    { name: "express", fav: false },
+    { name: "sequelize", fav: false },
+    { name: "prisma", fav: false },
+    { name: "mongo", fav: false },
+    { name: "mysql", fav: false },
+  ];
+  const otherTechnos = [
+    { name: "github", fav: true },
+    { name: "figma", fav: true },
+    { name: "netlify", fav: true },
+    { name: "postman", fav: false },
+    { name: "illustrator", fav: true },
+  ];
   return (
     <section
       id="techno"
@@ -37,159 +44,49 @@ export default function Technologies() {
         <div>
           <h4 className="mb-10">Programmation</h4>
           <ul>
-            <li className="techno-item favorite">
-              <span className="inline-block mr-10">
-                <SiJavascript size={20} />
-              </span>
-              JavaScript
-            </li>
-            <li className="techno-item favorite">
-              <span className="inline-block mr-10">
-                <SiTypescript size={20} />
-              </span>
-              TypeScript
-            </li>
+            {progTechnos.map((techno) => (
+              <TechnoItem
+                key={techno.name}
+                techno={techno.name}
+                favorite={techno.fav}
+              />
+            ))}
           </ul>
         </div>
         <div>
           <h4 className="mb-10">Front-End</h4>
           <ul>
-            <li className="techno-item">
-              <span className="inline-block mr-10">
-                <SiReact size={20} />
-              </span>
-              React
-            </li>
-            <li className="techno-item">
-              <span className="inline-block mr-10">
-                <SiVuedotjs size={20} />
-              </span>
-              Vue.js
-            </li>
-            <li className="techno-item">
-              <span className="inline-block mr-10">
-                <SiSass size={20} />
-              </span>
-              Sass
-            </li>
-            <li className="techno-item">
-              <span className="inline-block mr-10">
-                <SiBootstrap size={20} />
-              </span>
-              Bootstrap
-            </li>
-            <li className="techno-item favorite">
-              <span className="inline-block mr-10">
-                <SiTailwindcss size={20} />
-              </span>
-              Tailwind CSS
-            </li>
-            <li className="techno-item favorite">
-              <span className="inline-block mr-10">
-                <SiRedux size={20} />
-              </span>
-              Redux
-            </li>
-            <li className="techno-item favorite">
-              <span className="inline-block mr-10">
-                <SiVite size={20} />
-              </span>
-              Vite
-            </li>
-            <li className="techno-item">
-              <span className="inline-block mr-10">
-                <SiD3Dotjs size={20} />
-              </span>
-              D3.js
-            </li>
-            <li className="techno-item">
-              <span className="inline-block mr-10">
-                <SiJest size={20} />
-              </span>
-              Jest
-            </li>
-            <li className="techno-item favorite">
-              <span className="inline-block mr-10">
-                <SiVitest size={20} />
-              </span>
-              Vitest
-            </li>
+            {frontTechnos.map((techno) => (
+              <TechnoItem
+                key={techno.name}
+                techno={techno.name}
+                favorite={techno.fav}
+              />
+            ))}
           </ul>
         </div>
         <div>
           <h4 className="mb-10">Back-End</h4>
           <ul>
-            <li className="techno-item">
-              <span className="inline-block mr-10">
-                <SiNodedotjs size={20} />
-              </span>
-              Node.js
-            </li>
-            <li className="techno-item">
-              <span className="inline-block mr-10">
-                <SiExpress size={20} />
-              </span>
-              Express
-            </li>
-            <li className="techno-item">
-              <span className="inline-block mr-10">
-                <SiSequelize size={20} />
-              </span>
-              Sequelize
-            </li>
-            <li className="techno-item">
-              <span className="inline-block mr-10">
-                <SiPrisma size={20} />
-              </span>
-              Prisma
-            </li>
-            <li className="techno-item">
-              <span className="inline-block mr-10">
-                <SiMongodb size={20} />
-              </span>
-              MongoDB
-            </li>
-            <li className="techno-item">
-              <span className="inline-block mr-10">
-                <SiMysql size={20} />
-              </span>
-              MySQL
-            </li>
+            {backTechnos.map((techno) => (
+              <TechnoItem
+                key={techno.name}
+                techno={techno.name}
+                favorite={techno.fav}
+              />
+            ))}
           </ul>
         </div>
         <div>
           <h4 className="mb-10">Autres</h4>
           <ul>
-            <li className="techno-item favorite">
-              <span className="inline-block mr-10">
-                <SiGithub size={20} />
-              </span>
-              GitHub
-            </li>
-            <li className="techno-item favorite">
-              <span className="inline-block mr-10">
-                <SiFigma size={20} />
-              </span>
-              Figma
-            </li>
-            <li className="techno-item favorite">
-              <span className="inline-block mr-10">
-                <SiNetlify size={20} />
-              </span>
-              Netlify
-            </li>
-            <li className="techno-item">
-              <span className="inline-block mr-10">
-                <SiPostman size={20} />
-              </span>
-              Postman
-            </li>
-            <li className="techno-item favorite">
-              <span className="inline-block mr-10">
-                <SiAdobeillustrator size={20} />
-              </span>
-              Illustrator
-            </li>
+            {otherTechnos.map((techno) => (
+              <TechnoItem
+                key={techno.name}
+                techno={techno.name}
+                favorite={techno.fav}
+              />
+            ))}
           </ul>
         </div>
       </div>

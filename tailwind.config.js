@@ -70,7 +70,7 @@ export default {
       bold: "700",
     },
     dropShadow: {
-      base: "4px 4px 4px rgba(13, 60, 72, 0.5)",
+      base: "4px 4px 8px rgba(13, 60, 72, 0.5)",
       xl: "4px 4px 4px rgba(13, 60, 72, 0.8)",
     },
     extend: {},
