@@ -4,7 +4,9 @@ export default {
   theme: {
     spacing: {
       0: "0px",
+      2: "2px",
       5: "5px",
+      8: "8px",
       10: "10px",
       20: "20px",
       30: "30px",

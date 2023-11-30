@@ -33,10 +33,7 @@ export default function Technologies() {
     { name: "illustrator", fav: true },
   ];
   return (
-    <section
-      id="techno"
-      className="full-size flex flex-col flex-nowrap justify-start items-center bg-cyan-light-1 text-cyan-light-12"
-    >
+    <section id="techno" className="text-cyan-light-12">
       <h2 className="mt-50 mb-30 md:my-100 md:mt-181 lg:mb-150">
         Technologies
       </h2>

@@ -2,10 +2,7 @@ import { SiLinkedin, SiGithub, SiX } from "react-icons/si";
 
 export default function Hero() {
   return (
-    <section
-      id="hero"
-      className="full-size flex flex-col flex-nowrap justify-center items-center text-cyan-light-1"
-    >
+    <section id="hero" className="text-cyan-light-1">
       <img
         src="clement-storne.jpg"
         alt="Photo de profil de Clément STORNE"

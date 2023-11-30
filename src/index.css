@@ -40,11 +40,8 @@
     @apply text-xl;
   }
 
-  small {
-    @apply text-sm;
-  }
-
   section {
+    @apply full-size flex flex-col flex-nowrap justify-start items-center;
   }
 
   #hero {
@@ -68,11 +65,27 @@
     background-size: cover;
     background-repeat: no-repeat;
   }
+
+  #projects {
+    background-image: linear-gradient(
+        rgba(250, 253, 254, 0.85),
+        rgba(250, 253, 254, 0.95)
+      ),
+      url(/projects-background.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
 }
 
 @layer components {
   .techno-item {
     @apply flex items-center mb-5 md:mb-10;
+  }
+
+  .techno-tag {
+    border-radius: 20px;
+    @apply flex items-center px-8 py-2 mr-5 mb-5 text-sm bg-cyan-light-5;
   }
 }
 
