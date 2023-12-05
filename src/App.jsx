@@ -1,6 +1,7 @@
 import Hero from "./pages/Hero";
 import Technologies from "./pages/Technologies";
 import Projects from "./pages/Projects";
+import Contact from "./pages/Contact";
 
 export default function App() {
   return (
@@ -8,6 +9,7 @@ export default function App() {
       <Hero />
       <Technologies />
       <Projects />
+      <Contact />
     </>
   );
 }

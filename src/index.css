@@ -25,7 +25,7 @@
   }
 
   h2 {
-    @apply text-2xl md:text-4xl;
+    @apply text-2xl md:text-4xl mt-50 mb-30 md:my-100 md:mt-181 lg:mb-150;
   }
 
   h3 {
@@ -76,6 +76,17 @@
     background-size: cover;
     background-repeat: no-repeat;
   }
+
+  #contact {
+    background-image: linear-gradient(
+        rgba(250, 253, 254, 0.85),
+        rgba(250, 253, 254, 0.95)
+      ),
+      url(/contact-background.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
 }
 
 @layer components {
@@ -100,6 +111,20 @@
     border-radius: 20px;
     @apply flex items-center px-8 py-2 mr-5 mb-5 text-sm bg-cyan-light-5;
   }
+
+  .form-label {
+    @apply font-heading font-bold text-base md:text-xl ml-20;
+  }
+
+  .form-input {
+    @apply w-full max-w-600 h-70 mt-5 mb-20 p-20 outline-none border-cyan-light-8 border-2 focus:border-4 rounded;
+  }
+
+  .button {
+    @apply py-10 px-20 bg-cyan-light-11 font-heading font-bold text-xl md:text-2xl text-cyan-light-1 rounded-full
+    outline-none focus:py-6 focus:px-16 focus:border-cyan-light-11 focus:border-4 focus:bg-cyan-light-1 focus:text-cyan-light-12
+    hover:py-6 hover:px-16 hover:border-cyan-light-11 hover:border-4 hover:bg-cyan-light-1 hover:text-cyan-light-12;
+  }
 }
 
 @layer utilities {
@@ -110,5 +135,14 @@
 
   .favorite {
     @apply text-cyan-light-11 font-bold;
+  }
+
+  .error {
+    border: 2px solid red;
+  }
+
+  .error-message {
+    color: red;
+    @apply -mt-15 mb-20;
   }
 }

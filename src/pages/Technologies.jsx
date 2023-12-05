@@ -34,9 +34,7 @@ export default function Technologies() {
   ];
   return (
     <section id="techno" className="text-cyan-light-12">
-      <h2 className="mt-50 mb-30 md:my-100 md:mt-181 lg:mb-150">
-        Technologies
-      </h2>
+      <h2>Technologies</h2>
       <div className="mx-50 md:mx-150 grid grid-cols-2 grid-rows-2 gap-x-40 gap-y-20 xl:grid-cols-4 ">
         <div>
           <h4 className="mb-10">Programmation</h4>

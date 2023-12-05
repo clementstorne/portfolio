@@ -50,7 +50,7 @@ export default function Projects() {
 
   return (
     <section id="projects" className="text-cyan-light-12">
-      <h2 className="mt-50 mb-30 md:my-100 md:mt-181 lg:mb-150">Projets</h2>
+      <h2>Projets</h2>
       <div className="mx-50 sm:mx-150 lg:mx-100 xl:mx-150 mb-50 md:mb-150 grid grid-cols-1 grid-rows-3 lg:grid-cols-3 lg:grid-rows-1 gap-40 ">
         {projects.map((project) => (
           <ProjectCard

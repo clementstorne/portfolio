@@ -9,6 +9,7 @@ export default {
       6: "6px",
       8: "8px",
       10: "10px",
+      15: "15px",
       16: "16px",
       20: "20px",
       30: "30px",
@@ -24,6 +25,10 @@ export default {
       200: "200px",
       280: "280px",
       350: "350px",
+      600: "600px",
+    },
+    maxWidth: {
+      600: "600px",
     },
     borderRadius: {
       DEFAULT: "10px",
