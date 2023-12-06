@@ -10,7 +10,7 @@ export default function Hero() {
       />
       <h1 className="mb-5 md:mb-10 drop-shadow-xl">- Clément Storne- </h1>
       <h4 className="mt-5 md:mt-10 mb-20 md:mb-30 drop-shadow-base">
-        Développeur Front-End
+        Développeur JavaScript
       </h4>
       <p className="w-280 md:w-350 mb-20 md:mb-30 text-center">
         Je suis en quête de nouvelles opportunités pour appliquer ma passion
@@ -22,6 +22,7 @@ export default function Hero() {
           href="https://www.linkedin.com/in/clementstorne/"
           target="_blank"
           rel="noopener noreferrer"
+          className="rs-link"
         >
           <SiLinkedin size={30} />
         </a>
@@ -29,6 +30,7 @@ export default function Hero() {
           href="https://github.com/clementstorne"
           target="_blank"
           rel="noopener noreferrer"
+          className="rs-link"
         >
           <SiGithub size={30} />
         </a>
@@ -36,6 +38,7 @@ export default function Hero() {
           href="https://twitter.com/clementstorne"
           target="_blank"
           rel="noopener noreferrer"
+          className="rs-link"
         >
           <SiX size={30} />
         </a>

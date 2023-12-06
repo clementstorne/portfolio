@@ -14,7 +14,9 @@ export default function ContactForm() {
       className="w-full max-w-600 flex flex-col flex-nowrap justify-center items-center"
     >
       <div className="w-full max-w-600">
-        <label className="form-label">Nom</label>
+        <label htmlFor="name" className="form-label">
+          Nom
+        </label>
         <Controller
           name="name"
           control={control}
@@ -29,9 +31,11 @@ export default function ContactForm() {
           render={({ field, fieldState }) => (
             <>
               <input
+                id="name"
                 className={`form-input ${fieldState?.error ? "error" : ""}`}
                 {...field}
                 placeholder="Votre nom"
+                autoComplete="name"
               />
               {fieldState?.error && (
                 <p className="error-message">{fieldState.error.message}</p>
@@ -42,7 +46,9 @@ export default function ContactForm() {
       </div>
 
       <div className="w-full max-w-600">
-        <label className="form-label">Email</label>
+        <label htmlFor="email" className="form-label">
+          Email
+        </label>
         <Controller
           name="email"
           control={control}
@@ -57,10 +63,12 @@ export default function ContactForm() {
           render={({ field, fieldState }) => (
             <>
               <input
+                id="email"
                 className={`form-input ${fieldState?.error ? "error" : ""}`}
                 {...field}
                 type="email"
                 placeholder="Votre email"
+                autoComplete="email"
               />
               {fieldState?.error && (
                 <p className="error-message">{fieldState.error.message}</p>
@@ -71,7 +79,9 @@ export default function ContactForm() {
       </div>
 
       <div className="w-full max-w-600">
-        <label className="form-label">Message</label>
+        <label htmlFor="message" className="form-label">
+          Message
+        </label>
         <Controller
           name="message"
           control={control}
@@ -80,7 +90,8 @@ export default function ContactForm() {
           render={({ field, fieldState }) => (
             <>
               <textarea
-                className={`form-input h-280 ${
+                id="message"
+                className={`form-input h-200 md:h-280 ${
                   fieldState?.error ? "error" : ""
                 }`}
                 {...field}

@@ -18,17 +18,17 @@ export default function Technologies() {
     { name: "vitest", fav: true },
   ];
   const backTechnos = [
-    { name: "node", fav: false },
-    { name: "express", fav: false },
+    { name: "node", fav: true },
+    { name: "express", fav: true },
     { name: "sequelize", fav: false },
     { name: "prisma", fav: false },
     { name: "mongo", fav: false },
-    { name: "mysql", fav: false },
+    { name: "mysql", fav: true },
   ];
   const otherTechnos = [
-    { name: "github", fav: true },
+    { name: "github", fav: false },
     { name: "figma", fav: true },
-    { name: "netlify", fav: true },
+    { name: "netlify", fav: false },
     { name: "postman", fav: false },
     { name: "illustrator", fav: true },
   ];

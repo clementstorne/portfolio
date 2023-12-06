@@ -12,6 +12,7 @@ export default {
       15: "15px",
       16: "16px",
       20: "20px",
+      25: "25px",
       30: "30px",
       40: "40px",
       50: "50px",
@@ -32,6 +33,7 @@ export default {
     },
     borderRadius: {
       DEFAULT: "10px",
+      large: "50px",
       full: "9999px",
     },
     colors: {

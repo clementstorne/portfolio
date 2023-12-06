@@ -25,7 +25,7 @@
   }
 
   h2 {
-    @apply text-2xl md:text-4xl mt-50 mb-30 md:my-100 md:mt-181 lg:mb-150;
+    @apply text-2xl md:text-4xl mt-50 mb-30 md:my-80;
   }
 
   h3 {
@@ -90,6 +90,21 @@
 }
 
 @layer components {
+  .navbar {
+    @apply z-50 fixed top-0 left-0 right-0
+    py-5 px-10 md:px-25 bg-cyan-light-1 text-cyan-light-12 drop-shadow-base flex flex-row flex-nowrap justify-around items-center;
+  }
+
+  .navbar-link {
+    @apply inline-block mx-10 md:mx-25 px-5 outline-none
+    hover:text-cyan-light-11
+    focus:text-cyan-light-1 focus:bg-cyan-light-12;
+  }
+
+  .rs-link {
+    @apply outline-none focus:text-cyan-light-8;
+  }
+
   .link-button {
     border-radius: 41px;
     @apply flex justify-center items-center px-20 py-10 font-bold text-cyan-light-1 bg-cyan-light-11 
@@ -117,7 +132,7 @@
   }
 
   .form-input {
-    @apply w-full max-w-600 h-70 mt-5 mb-20 p-20 outline-none border-cyan-light-8 border-2 focus:border-4 rounded;
+    @apply w-full max-w-600 h-50 md:h-70 mt-5 mb-20 p-20 outline-none border-cyan-light-8 border-2 focus:border-4 rounded;
   }
 
   .button {
