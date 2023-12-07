@@ -20,9 +20,11 @@ export default function Hero() {
         Développeur JavaScript
       </p>
       <p className="w-280 md:w-350 mb-20 md:mb-30 text-center">
-        Je suis en quête de nouvelles opportunités pour appliquer ma passion
-        croissante dans la création d’applications en ligne. Je suis disponible
-        dès à présent.
+        Déterminé à explorer de nouvelles opportunités et à canaliser ma passion
+        grandissante dans le domaine de la création d&apos;applications en
+        ligne, je suis prêt à collaborer avec vous pour donner vie à vos
+        prochaines applications. Ensemble, créons des solutions sur mesure qui
+        répondent à vos besoins et dépassent vos attentes.
       </p>
       <div className="w-150 flex flex-row flex-nowrap justify-between items-center">
         <a
