@@ -1,6 +1,10 @@
 import TechnoItem from "../components/TechnoItem";
 
+import { useTheme } from "../context/ThemeContext";
+
 export default function Technologies() {
+  const { isDarkMode } = useTheme();
+
   const progTechnos = [
     { name: "JS", fav: true },
     { name: "TS", fav: true },
@@ -33,7 +37,10 @@ export default function Technologies() {
     { name: "illustrator", fav: true },
   ];
   return (
-    <section id="techno" className="text-cyan-light-12">
+    <section
+      id="techno"
+      className={`text-cyan-light-12 ${isDarkMode ? "dark" : ""}`}
+    >
       <h2>Technologies</h2>
       <div className="mx-50 md:mx-150 grid grid-cols-2 grid-rows-2 gap-x-40 gap-y-20 xl:grid-cols-4 ">
         <div>

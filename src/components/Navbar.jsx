@@ -1,4 +1,5 @@
 import { HashLink as Link } from "react-router-hash-link";
+import ThemeToggle from "./ThemeToggle";
 
 export default function Navbar() {
   const sections = [
@@ -15,6 +16,7 @@ export default function Navbar() {
           {section.name}
         </Link>
       ))}
+      <ThemeToggle />
     </nav>
   );
 }

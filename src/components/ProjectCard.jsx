@@ -8,13 +8,16 @@ export default function ProjectCard(props) {
     <div className="project-card">
       <h4 className="mb-30">{props.title}</h4>
       <p className="min-h-120 mb-30">{props.description}</p>
-      <div className="mb-30 flex flex-row flex-wrap justify-center items-center">
+      <div className="mb-20 flex flex-row flex-wrap justify-center items-center">
         {props.tags.map((tag) => (
           <TechnoTag key={tag} techno={tag} />
         ))}
       </div>
       <div>
         <LinkButton label="Voir le code" link={props.code} icon="github" />
+        {props.demo && (
+          <LinkButton label="Voir le site" link={props.demo} icon="netlify" />
+        )}
       </div>
     </div>
   );

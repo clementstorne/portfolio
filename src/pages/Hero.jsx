@@ -1,8 +1,15 @@
 import { SiLinkedin, SiGithub, SiX } from "react-icons/si";
 
+import { useTheme } from "../context/ThemeContext";
+
 export default function Hero() {
+  const { isDarkMode } = useTheme();
+
   return (
-    <section id="hero" className="justify-center text-cyan-light-1">
+    <section
+      id="hero"
+      className={`justify-center text-cyan-light-1 ${isDarkMode ? "dark" : ""}`}
+    >
       <img
         src="clement-storne.jpg"
         alt="Photo de profil de Clément STORNE"

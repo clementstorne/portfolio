@@ -41,7 +41,7 @@
   }
 
   section {
-    @apply full-size flex flex-col flex-nowrap justify-start items-center;
+    @apply full-size flex flex-col flex-nowrap justify-start items-center dark:text-cyan-light-1;
   }
 
   #hero {
@@ -55,6 +55,14 @@
     background-repeat: no-repeat;
   }
 
+  #hero.dark {
+    background-image: linear-gradient(
+        rgba(0, 56, 72, 0.5),
+        rgba(0, 56, 72, 0.95)
+      ),
+      url(/hero-background.jpg);
+  }
+
   #techno {
     background-image: linear-gradient(
         rgba(250, 253, 254, 0.85),
@@ -64,6 +72,14 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+  }
+
+  #techno.dark {
+    background-image: linear-gradient(
+        rgba(11, 22, 26, 0.85),
+        rgba(11, 22, 26, 0.95)
+      ),
+      url(/techno-background.jpg);
   }
 
   #projects {
@@ -77,6 +93,14 @@
     background-repeat: no-repeat;
   }
 
+  #projects.dark {
+    background-image: linear-gradient(
+        rgba(11, 22, 26, 0.85),
+        rgba(11, 22, 26, 0.95)
+      ),
+      url(/projects-background.jpg);
+  }
+
   #contact {
     background-image: linear-gradient(
         rgba(250, 253, 254, 0.85),
@@ -87,35 +111,44 @@
     background-size: cover;
     background-repeat: no-repeat;
   }
+
+  #contact.dark {
+    background-image: linear-gradient(
+        rgba(11, 22, 26, 0.85),
+        rgba(11, 22, 26, 0.95)
+      ),
+      url(/contact-background.jpg);
+  }
 }
 
 @layer components {
   .navbar {
-    @apply z-50 fixed top-0 left-0 right-0
-    py-5 px-10 md:px-25 bg-cyan-light-1 text-cyan-light-12 drop-shadow-base flex flex-row flex-nowrap justify-around items-center;
+    @apply z-50 fixed top-0 left-0 right-0 py-5 px-10 md:px-25 drop-shadow-base flex flex-row flex-nowrap justify-around items-center
+    bg-cyan-light-1 dark:bg-cyan-dark-1 text-cyan-light-12 dark:text-cyan-light-1;
   }
 
   .navbar-link {
-    @apply inline-block mx-10 md:mx-25 px-5 outline-none
-    hover:text-cyan-light-11
-    focus:text-cyan-light-1 focus:bg-cyan-light-12;
+    @apply inline-block mx-5 md:mx-25 px-5 outline-none
+    hover:text-cyan-light-11 dark:hover:text-cyan-light-11
+    focus:text-cyan-light-1 dark:focus:text-cyan-dark-1 focus:bg-cyan-light-12 dark:focus:bg-cyan-dark-12;
   }
 
   .rs-link {
-    @apply outline-none focus:text-cyan-light-8;
+    @apply outline-none
+  hover:text-cyan-light-8 dark:hover:text-cyan-dark-8
+  focus:text-cyan-light-8 dark:focus:text-cyan-dark-8;
   }
 
   .link-button {
     border-radius: 41px;
-    @apply flex justify-center items-center px-20 py-10 font-bold text-cyan-light-1 bg-cyan-light-11 
-    hover:px-16 hover:py-6 hover:text-cyan-light-12 hover:bg-cyan-light-1 hover:border-4 hover:border-cyan-light-8 
-    focus:px-16 focus:py-6 focus:text-cyan-light-12 focus:bg-cyan-light-1 focus:border-4 focus:border-cyan-light-8 focus:outline-none
-    focus-visible:px-16 focus-visible:py-6 focus-visible:text-cyan-light-12 focus-visible:bg-cyan-light-1 focus-visible:border-4 focus-visible:border-cyan-light-8 focus-visible:outline-none;
+    @apply flex justify-center items-center mt-10 px-20 py-10 font-bold text-cyan-light-1 bg-cyan-light-11 dark:bg-cyan-dark-11 outline-none
+    hover:px-16 hover:py-6 hover:border-4 hover:text-cyan-light-12 dark:hover:text-cyan-light-1 hover:bg-cyan-light-1 dark:hover:bg-cyan-dark-3 hover:border-cyan-light-8 dark:hover:border-cyan-dark-8
+    focus:px-16 focus:py-6 focus:border-4 focus:text-cyan-light-12 dark:focus:text-cyan-light-1 focus:bg-cyan-light-1 dark:focus:bg-cyan-dark-3 focus:border-cyan-light-8 dark:focus:border-cyan-dark-8;
   }
 
   .project-card {
-    @apply flex flex-col flex-nowrap justify-center items-center py-20 px-10 rounded text-center bg-cyan-light-1 drop-shadow-base hover:drop-shadow-xl
-    md:py-40 md:px-20;
+    @apply flex flex-col flex-nowrap justify-center items-center py-20 px-10 md:py-40 md:px-20 rounded text-center drop-shadow-base hover:drop-shadow-xl
+    bg-cyan-light-1 dark:bg-cyan-dark-3;
   }
 
   .techno-item {
@@ -124,21 +157,23 @@
 
   .techno-tag {
     border-radius: 20px;
-    @apply flex items-center px-8 py-2 mr-5 mb-5 text-sm bg-cyan-light-5;
+    @apply flex items-center px-8 py-2 mr-5 mb-5 text-sm bg-cyan-light-5 dark:bg-cyan-dark-5 dark:text-cyan-light-1;
   }
 
   .form-label {
-    @apply font-heading font-bold text-base md:text-xl ml-20;
+    @apply font-heading font-bold text-base md:text-xl ml-20 dark:text-cyan-light-1;
   }
 
   .form-input {
-    @apply w-full max-w-600 h-50 md:h-70 mt-5 mb-20 p-20 outline-none border-cyan-light-8 border-2 focus:border-4 rounded;
+    @apply w-full max-w-600 h-50 md:h-70 mt-5 mb-20 p-20 outline-none border-2 focus:border-4 rounded
+    border-cyan-light-8 dark:border-cyan-dark-8 dark:bg-cyan-dark-3;
   }
 
   .button {
-    @apply py-10 px-20 bg-cyan-light-11 font-heading font-bold text-xl md:text-2xl text-cyan-light-1 rounded-full
-    outline-none focus:py-6 focus:px-16 focus:border-cyan-light-11 focus:border-4 focus:bg-cyan-light-1 focus:text-cyan-light-12
-    hover:py-6 hover:px-16 hover:border-cyan-light-11 hover:border-4 hover:bg-cyan-light-1 hover:text-cyan-light-12;
+    border-radius: 43px;
+    @apply outline-none py-10 px-20 font-heading font-bold text-xl md:text-2xl bg-cyan-light-11 text-cyan-light-1 dark:bg-cyan-dark-8 dark:text-cyan-light-1
+    hover:py-6 hover:px-16 hover:border-4 hover:border-cyan-light-11 dark:hover:border-cyan-dark-8 hover:bg-cyan-light-1 dark:hover:bg-cyan-dark-3 hover:text-cyan-light-12 dark:hover:text-cyan-light-1
+    focus:py-6 focus:px-16 focus:border-4 focus:border-cyan-light-11 dark:focus:border-cyan-dark-8 focus:bg-cyan-light-1 dark:focus:bg-cyan-dark-3 focus:text-cyan-light-12 dark:focus:text-cyan-light-1;
   }
 }
 
@@ -149,11 +184,11 @@
   }
 
   .favorite {
-    @apply text-cyan-light-11 font-bold;
+    @apply font-bold text-cyan-light-11 dark:text-cyan-dark-11;
   }
 
   .error {
-    border: 2px solid red;
+    border: 2px solid red !important;
   }
 
   .error-message {

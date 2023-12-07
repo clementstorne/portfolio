@@ -1,6 +1,10 @@
 import ProjectCard from "../components/ProjectCard";
 
+import { useTheme } from "../context/ThemeContext";
+
 export default function Projects() {
+  const { isDarkMode } = useTheme();
+
   const projects = [
     {
       title: "Tic Tac Toe Game",
@@ -8,7 +12,7 @@ export default function Projects() {
         "Dans le cadre des défis Frontend Mentor, j'ai réalisé un jeu de morpion interactif avec un mode multijoueur et un mode monojoueur contre une IA.",
       tags: ["vite", "JS", "react", "redux", "tailwind"],
       code: "https://github.com/clementstorne/FrontendMentor-tic-tac-toe-game",
-      demo: "",
+      demo: "https://clementstorne-tic-tac-toe-game.netlify.app/",
     },
     {
       title: "Groupomania",
@@ -49,7 +53,10 @@ export default function Projects() {
   ];
 
   return (
-    <section id="projects" className="text-cyan-light-12">
+    <section
+      id="projects"
+      className={`text-cyan-light-12 ${isDarkMode ? "dark" : ""}`}
+    >
       <h2>Projets</h2>
       <div className="mx-50 sm:mx-150 lg:mx-100 xl:mx-150 mb-50 md:mb-150 grid grid-cols-1 grid-rows-3 lg:grid-cols-3 lg:grid-rows-1 gap-40 ">
         {projects.map((project) => (
@@ -59,6 +66,7 @@ export default function Projects() {
             description={project.description}
             tags={project.tags}
             code={project.code}
+            demo={project.demo}
           />
         ))}
       </div>
