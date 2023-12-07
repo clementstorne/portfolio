@@ -11,7 +11,7 @@ export default function ThemeToggle() {
   }, [isDarkMode]);
 
   return (
-    <button onClick={toggleTheme}>
+    <button onClick={toggleTheme} className="navbar-link rounded-full">
       {isDarkMode ? <IoMoon /> : <IoSunny />}
     </button>
   );
