@@ -128,7 +128,13 @@
   }
 
   .navbar-link {
-    @apply inline-block mx-5 md:mx-25 px-5 outline-none
+    @apply inline-block mx-5 md:mx-25 px-5 md:px-10 outline-none rounded
+    hover:text-cyan-light-11 dark:hover:text-cyan-light-11
+    focus:text-cyan-light-1 dark:focus:text-cyan-dark-1 focus:bg-cyan-light-12 dark:focus:bg-cyan-dark-12;
+  }
+
+  .theme-toggle {
+    @apply outline-none p-4 rounded-full
     hover:text-cyan-light-11 dark:hover:text-cyan-light-11
     focus:text-cyan-light-1 dark:focus:text-cyan-dark-1 focus:bg-cyan-light-12 dark:focus:bg-cyan-dark-12;
   }

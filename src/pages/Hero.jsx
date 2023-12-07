@@ -1,6 +1,6 @@
 import { SiLinkedin, SiGithub, SiX } from "react-icons/si";
 
-import { useTheme } from "../context/ThemeContext";
+import useTheme from "../hooks/useTheme";
 
 export default function Hero() {
   const { isDarkMode } = useTheme();

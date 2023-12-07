@@ -1,6 +1,6 @@
 import TechnoItem from "../components/TechnoItem";
 
-import { useTheme } from "../context/ThemeContext";
+import useTheme from "../hooks/useTheme";
 
 export default function Technologies() {
   const { isDarkMode } = useTheme();

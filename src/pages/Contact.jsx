@@ -1,6 +1,6 @@
 import ContactForm from "../components/ContactForm";
 
-import { useTheme } from "../context/ThemeContext";
+import useTheme from "../hooks/useTheme";
 
 export default function Contact() {
   const { isDarkMode } = useTheme();

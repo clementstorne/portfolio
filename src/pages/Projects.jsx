@@ -1,6 +1,6 @@
 import ProjectCard from "../components/ProjectCard";
 
-import { useTheme } from "../context/ThemeContext";
+import useTheme from "../hooks/useTheme";
 
 export default function Projects() {
   const { isDarkMode } = useTheme();

@@ -1,12 +1,8 @@
 import PropTypes from "prop-types";
 
-import { createContext, useContext, useState } from "react";
+import { createContext, useState } from "react";
 
-const ThemeContext = createContext();
-
-export const useTheme = () => {
-  return useContext(ThemeContext);
-};
+export const ThemeContext = createContext();
 
 export default function ThemeProvider({ children }) {
   const [isDarkMode, setIsDarkMode] = useState(false);
