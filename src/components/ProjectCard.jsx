@@ -6,7 +6,7 @@ import LinkButton from "./LinkButton";
 export default function ProjectCard(props) {
   return (
     <div className="project-card">
-      <h4 className="mb-30">{props.title}</h4>
+      <h3 className="mb-30">{props.title}</h3>
       <p className="min-h-120 mb-30">{props.description}</p>
       <div className="mb-20 flex flex-row flex-wrap justify-center items-center">
         {props.tags.map((tag) => (

@@ -16,7 +16,11 @@ export default function ThemeToggle() {
   }, [isDarkMode]);
 
   return (
-    <button onClick={handleOnClick} className="theme-toggle">
+    <button
+      onClick={handleOnClick}
+      className="theme-toggle"
+      aria-label={isDarkMode ? "Passer au mode clair" : "Passer au mode sombre"}
+    >
       {isDarkMode ? <IoMoon /> : <IoSunny />}
     </button>
   );

@@ -44,7 +44,7 @@ export default function Technologies() {
       <h2>Technologies</h2>
       <div className="mx-50 md:mx-150 grid grid-cols-2 grid-rows-2 gap-x-40 gap-y-20 xl:grid-cols-4 ">
         <div>
-          <h4 className="mb-10">Programmation</h4>
+          <h3 className="mb-10">Programmation</h3>
           <ul>
             {progTechnos.map((techno) => (
               <TechnoItem
@@ -56,7 +56,7 @@ export default function Technologies() {
           </ul>
         </div>
         <div>
-          <h4 className="mb-10">Front-End</h4>
+          <h3 className="mb-10">Front-End</h3>
           <ul>
             {frontTechnos.map((techno) => (
               <TechnoItem
@@ -68,7 +68,7 @@ export default function Technologies() {
           </ul>
         </div>
         <div>
-          <h4 className="mb-10">Back-End</h4>
+          <h3 className="mb-10">Back-End</h3>
           <ul>
             {backTechnos.map((techno) => (
               <TechnoItem
@@ -80,7 +80,7 @@ export default function Technologies() {
           </ul>
         </div>
         <div>
-          <h4 className="mb-10">Autres</h4>
+          <h3 className="mb-10">Autres</h3>
           <ul>
             {otherTechnos.map((techno) => (
               <TechnoItem
