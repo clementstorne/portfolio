@@ -1,10 +1,21 @@
 import { useForm, Controller } from "react-hook-form";
+import emailjs from "@emailjs/browser";
 
 export default function ContactForm() {
   const { control, handleSubmit, reset } = useForm();
 
   const onSubmit = (data) => {
-    console.log(data);
+    const templateParams = {
+      name: data.name,
+      email: data.email,
+      message: data.message,
+    };
+    emailjs.send(
+      import.meta.env.VITE_EMAILJS_SERVICE_ID,
+      import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+      templateParams,
+      import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+    );
     reset();
   };
 
