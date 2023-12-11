@@ -36,6 +36,10 @@
     @apply full-size flex flex-col flex-nowrap justify-start items-center dark:text-cyan-light-1;
   }
 
+  strong {
+    @apply text-cyan-light-11 dark:text-cyan-dark-9;
+  }
+
   #hero {
     background-image: linear-gradient(
         rgba(16, 125, 152, 0.5),
@@ -53,6 +57,25 @@
         rgba(0, 56, 72, 0.95)
       ),
       url(/hero-background.webp);
+  }
+
+  #who-am-i {
+    background-image: linear-gradient(
+        rgba(250, 253, 254, 0.85),
+        rgba(250, 253, 254, 0.95)
+      ),
+      url(/who-am-i-background.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  #who-am-i.dark {
+    background-image: linear-gradient(
+        rgba(11, 22, 26, 0.85),
+        rgba(11, 22, 26, 0.95)
+      ),
+      url(/who-am-i-background.webp);
   }
 
   #techno {

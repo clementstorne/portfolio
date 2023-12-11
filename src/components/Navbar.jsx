@@ -4,6 +4,7 @@ import ThemeToggle from "./ThemeToggle";
 export default function Navbar() {
   const sections = [
     { name: "À propos", to: "/#hero" },
+    { name: "Qui je suis ?", to: "/#who-am-i" },
     { name: "Technologies", to: "/#techno" },
     { name: "Projets", to: "/#projects" },
     { name: "Contact", to: "/#contact" },

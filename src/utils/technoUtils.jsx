@@ -23,6 +23,7 @@ import {
   SiPostman,
   SiAdobeillustrator,
 } from "react-icons/si";
+import { FaFile } from "react-icons/fa";
 
 const getTechnoIcon = (techno, iconSize) => {
   switch (techno) {
@@ -72,6 +73,8 @@ const getTechnoIcon = (techno, iconSize) => {
       return <SiPostman size={iconSize} />;
     case "illustrator":
       return <SiAdobeillustrator size={iconSize} />;
+    case "file":
+      return <FaFile size={iconSize} />;
   }
 };
 

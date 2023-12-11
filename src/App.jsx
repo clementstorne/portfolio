@@ -5,12 +5,14 @@ import Hero from "./pages/Hero";
 import Technologies from "./pages/Technologies";
 import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
+import WhoAmI from "./pages/WhoAmI";
 
 export default function App() {
   return (
     <ThemeProvider>
       <Navbar />
       <Hero />
+      <WhoAmI />
       <Technologies />
       <Projects />
       <Contact />
