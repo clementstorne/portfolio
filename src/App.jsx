@@ -1,4 +1,5 @@
 import ThemeProvider from "./context/ThemeContext";
+import ToastProvider from "./context/ToastContext";
 
 import Navbar from "./components/Navbar";
 import Hero from "./pages/Hero";
@@ -10,12 +11,14 @@ import WhoAmI from "./pages/WhoAmI";
 export default function App() {
   return (
     <ThemeProvider>
-      <Navbar />
-      <Hero />
-      <WhoAmI />
-      <Technologies />
-      <Projects />
-      <Contact />
+      <ToastProvider>
+        <Navbar />
+        <Hero />
+        <WhoAmI />
+        <Technologies />
+        <Projects />
+        <Contact />
+      </ToastProvider>
     </ThemeProvider>
   );
 }

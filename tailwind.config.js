@@ -32,6 +32,7 @@ export default {
     },
     maxWidth: {
       600: "600px",
+      "50p": "50%",
     },
     borderRadius: {
       DEFAULT: "10px",

@@ -1,8 +1,11 @@
 import { useForm, Controller } from "react-hook-form";
+
+import useToast from "../hooks/useToast";
 import emailjs from "@emailjs/browser";
 
 export default function ContactForm() {
   const { control, handleSubmit, reset } = useForm();
+  const toast = useToast();
 
   const onSubmit = (data) => {
     const templateParams = {
@@ -16,6 +19,7 @@ export default function ContactForm() {
       templateParams,
       import.meta.env.VITE_EMAILJS_PUBLIC_KEY
     );
+    toast?.open("Votre message a été envoyé");
     reset();
   };
 

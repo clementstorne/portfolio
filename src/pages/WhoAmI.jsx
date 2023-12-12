@@ -38,11 +38,13 @@ export default function WhoAmI() {
           maîtriser <strong>React</strong> pour la création d&apos;applications
           web dynamiques.
         </p>
-        <LinkButton
-          label="Voir mon CV"
-          link="https://drive.google.com/file/d/1GyRbjsgV3Q3c5t2p8bXB7VOdFExL740Z/view?usp=share_link"
-          icon="file"
-        />
+        <div className="flex flex-row flex-nowrap justify-center items-center">
+          <LinkButton
+            label="Voir mon CV"
+            link="https://drive.google.com/file/d/1GyRbjsgV3Q3c5t2p8bXB7VOdFExL740Z/view?usp=share_link"
+            icon="file"
+          />
+        </div>
       </div>
     </section>
   );
