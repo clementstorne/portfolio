@@ -13,6 +13,7 @@ export default function Projects() {
       tags: ["vite", "JS", "react", "redux", "tailwind"],
       code: "https://github.com/clementstorne/FrontendMentor-tic-tac-toe-game",
       demo: "https://clementstorne-tic-tac-toe-game.netlify.app/",
+      demoIcon: "netlify",
     },
     {
       title: "Groupomania",
@@ -32,9 +33,9 @@ export default function Projects() {
       demo: "",
     },
     {
-      title: "Learn@Home",
+      title: "Domaine de Lipica",
       description:
-        "Plateforme de mise en relation d’élèves et tuteurs avec une messagerie, un calendrier ainsi qu’une todo-list.",
+        "Refonte complète du site internet existant pour moderniser l’expérience utilisateur. Développement d’un back-end permettant à l’administrateur du site une gestion autonome des contenus.",
       tags: [
         "figma",
         "vite",
@@ -48,7 +49,7 @@ export default function Projects() {
         "mysql",
       ],
       code: "https://github.com/clementstorne/LearnAtHome",
-      demo: "",
+      demo: "https://domaine-de-lipica.onrender.com/",
     },
   ];
 
@@ -58,7 +59,7 @@ export default function Projects() {
       className={`text-cyan-light-12 ${isDarkMode ? "dark" : ""}`}
     >
       <h2>Projets</h2>
-      <div className="mx-50 sm:mx-150 lg:mx-100 xl:mx-150 mb-50 md:mb-150 grid grid-cols-1 grid-rows-3 lg:grid-cols-3 lg:grid-rows-1 gap-40 ">
+      <div className="grid grid-cols-1 grid-rows-3 gap-40 mx-50 sm:mx-150 lg:mx-100 xl:mx-150 mb-50 md:mb-150 lg:grid-cols-3 lg:grid-rows-1 ">
         {projects.map((project) => (
           <ProjectCard
             key={project.title}
@@ -67,6 +68,7 @@ export default function Projects() {
             tags={project.tags}
             code={project.code}
             demo={project.demo}
+            demoIcon={project.demoIcon}
           />
         ))}
       </div>

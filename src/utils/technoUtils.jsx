@@ -1,29 +1,29 @@
+import { FaDesktop, FaFile } from "react-icons/fa";
 import {
-  SiJavascript,
-  SiTypescript,
-  SiReact,
-  SiVuedotjs,
-  SiSass,
+  SiAdobeillustrator,
   SiBootstrap,
-  SiTailwindcss,
-  SiRedux,
-  SiVite,
   SiD3Dotjs,
-  SiJest,
-  SiVitest,
-  SiNodedotjs,
   SiExpress,
-  SiSequelize,
-  SiPrisma,
+  SiFigma,
+  SiGithub,
+  SiJavascript,
+  SiJest,
   SiMongodb,
   SiMysql,
-  SiGithub,
-  SiFigma,
   SiNetlify,
+  SiNodedotjs,
   SiPostman,
-  SiAdobeillustrator,
+  SiPrisma,
+  SiReact,
+  SiRedux,
+  SiSass,
+  SiSequelize,
+  SiTailwindcss,
+  SiTypescript,
+  SiVite,
+  SiVitest,
+  SiVuedotjs,
 } from "react-icons/si";
-import { FaFile } from "react-icons/fa";
 
 const getTechnoIcon = (techno, iconSize) => {
   switch (techno) {
@@ -75,6 +75,8 @@ const getTechnoIcon = (techno, iconSize) => {
       return <SiAdobeillustrator size={iconSize} />;
     case "file":
       return <FaFile size={iconSize} />;
+    default:
+      return <FaDesktop size={iconSize} />;
   }
 };
 
