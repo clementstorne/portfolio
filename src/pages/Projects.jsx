@@ -49,7 +49,7 @@ export default function Projects() {
         "mysql",
       ],
       code: "https://github.com/clementstorne/LearnAtHome",
-      demo: "https://domaine-de-lipica.onrender.com/",
+      demo: "https://domaine-de-lipica.vercel.app/",
     },
   ];
 

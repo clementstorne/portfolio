@@ -1,7 +1,7 @@
-import { useForm, Controller } from "react-hook-form";
+import { Controller, useForm } from "react-hook-form";
 
-import useToast from "../hooks/useToast";
 import emailjs from "@emailjs/browser";
+import useToast from "../hooks/useToast";
 
 export default function ContactForm() {
   const { control, handleSubmit, reset } = useForm();
@@ -26,7 +26,7 @@ export default function ContactForm() {
   return (
     <form
       onSubmit={handleSubmit(onSubmit)}
-      className="w-full max-w-600 flex flex-col flex-nowrap justify-center items-center"
+      className="flex flex-col items-center justify-center w-full max-w-600 flex-nowrap"
     >
       <div className="w-full max-w-600">
         <label htmlFor="name" className="form-label">
