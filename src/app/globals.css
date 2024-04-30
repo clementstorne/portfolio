@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-gradient-to-b from-blue-700 to-blue-950 text-alabaster-50;
+  }
+
+  h1,
+  h2 {
+    @apply font-montserrat font-bold;
+  }
+
+  a {
+    @apply hover:text-alabaster-100;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
