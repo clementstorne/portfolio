@@ -1,9 +1,15 @@
+import { cn } from "@/lib/utils";
 import Link from "next/link";
 import { SiGithub, SiLinkedin, SiX } from "react-icons/si";
 
 const SocialLinks = () => {
   return (
-    <div className="absolute bottom-0 flex flex-col items-center space-y-6 delay-1000 right-14 animate-slide-top">
+    <div
+      className={cn(
+        "hidden",
+        "absolute bottom-0 md:flex flex-col items-center space-y-6 delay-1000 right-14 animate-slide-top"
+      )}
+    >
       <Link
         href="https://www.linkedin.com/in/clementstorne/"
         target="_blank"

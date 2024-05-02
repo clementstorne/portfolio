@@ -121,6 +121,9 @@ const config = {
         montserrat: ["var(--font-montserrat)"],
         lato: ["var(--font-lato)"],
       },
+      spacing: {
+        "22": "88px",
+      },
       maxWidth: {
         "285": "1140px",
       },

@@ -6,7 +6,9 @@ import Logo from "@public/logo.svg";
 import { Menu, X } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
+import { SiGithub, SiLinkedin, SiX } from "react-icons/si";
 
 type BurgerButtonProps = {
   className?: string;
@@ -18,11 +20,11 @@ const BurgerButton = ({ className, isOpen, onClick }: BurgerButtonProps) => {
   return (
     <Button
       variant={"ghost"}
-      className={className}
+      className={cn("p-2", className)}
       aria-label="Open Menu"
       onClick={onClick}
     >
-      {isOpen ? <X /> : <Menu />}
+      {isOpen ? <X size={32} /> : <Menu size={32} />}
     </Button>
   );
 };
@@ -38,19 +40,19 @@ const links: Link[] = [
     label: "Accueil",
   },
   {
-    href: "/",
+    href: "/qui-suis-je",
     label: "Qui suis-je ?",
   },
   {
-    href: "/",
+    href: "/mes-competences",
     label: "Mes compétences",
   },
   {
-    href: "/",
+    href: "/mes-projets",
     label: "Mes projets",
   },
   {
-    href: "/",
+    href: "/me-contacter",
     label: "Me contacter",
   },
 ];
@@ -77,7 +79,10 @@ const NavbarLink = ({ href, label, className }: NavbarLinkProps) => {
 };
 
 const Navbar = () => {
+  const currentPath = usePathname();
+
   const [isOpen, setIsOpen] = useState(false);
+  const [showBackground, setShowBackground] = useState(false);
 
   const handleDrawer = () => {
     setIsOpen(!isOpen);
@@ -103,12 +108,36 @@ const Navbar = () => {
     };
   }, [isOpen]);
 
+  const TOP_OFFSET = 1;
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY >= TOP_OFFSET) {
+        setShowBackground(true);
+      } else {
+        setShowBackground(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  const getDelay = (index: number) => {
+    return `delay-${index * 200 + 1400}` as string;
+  };
+
   return (
     <header
       className={cn(
         "fixed top-0 w-full h-16 py-2 px-5 z-10",
         "md:h-20 md:py-4 md:px-14",
-        "flex items-center justify-between"
+        "flex items-center justify-between",
+        isOpen && "bg-blue-950/95",
+        showBackground && "bg-blue-950/95"
       )}
     >
       <div className="w-full h-full flex justify-between items-center">
@@ -122,7 +151,7 @@ const Navbar = () => {
         </Link>
 
         <BurgerButton
-          className="mr-2 md:hidden text-orange-1"
+          className="md:hidden -mr-2 animate-slide-bottom"
           isOpen={isOpen}
           onClick={handleDrawer}
         />
@@ -134,7 +163,10 @@ const Navbar = () => {
                 key={index}
                 href={link.href}
                 label={link.label}
-                className={`animate-slide-bottom delay-${1400 + index * 200}`}
+                className={cn(
+                  `animate-slide-bottom ${getDelay(index)}`,
+                  currentPath === link.href && "border-green-500"
+                )}
               />
             ))}
           </nav>
@@ -153,6 +185,31 @@ const Navbar = () => {
         {links.map((link, index) => (
           <NavbarLink key={index} href={link.href} label={link.label} />
         ))}
+        <div className="flex items-center space-x-6">
+          <Link
+            href="https://www.linkedin.com/in/clementstorne/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <SiLinkedin size={32} />
+          </Link>
+
+          <Link
+            href="https://github.com/clementstorne"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <SiGithub size={32} />
+          </Link>
+
+          <Link
+            href="https://twitter.com/clementstorne"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <SiX size={32} />
+          </Link>
+        </div>
       </nav>
     </header>
   );
