@@ -127,7 +127,20 @@ const Navbar = () => {
   }, []);
 
   const getDelay = (index: number) => {
-    return `delay-${index * 200 + 1400}` as string;
+    switch (index) {
+      case 0:
+        return "delay-1400";
+      case 1:
+        return "delay-1600";
+      case 2:
+        return "delay-1800";
+      case 3:
+        return "delay-2000";
+      case 4:
+        return "delay-2200";
+      default:
+        return "delay-1400";
+    }
   };
 
   return (
