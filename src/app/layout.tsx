@@ -1,17 +1,7 @@
 import Navbar from "@components/Navbar";
 import type { Metadata } from "next";
-import { Lato, Montserrat } from "next/font/google";
+import { lato } from "./fonts";
 import "./globals.css";
-
-export const montserrat = Montserrat({
-  subsets: ["latin"],
-  variable: "--font-montserrat",
-});
-export const lato = Lato({
-  weight: ["100", "300", "400", "700", "900"],
-  subsets: ["latin"],
-  variable: "--font-lato",
-});
 
 export const metadata: Metadata = {
   title: "Clément Storne - Développeur Web Front-end",
