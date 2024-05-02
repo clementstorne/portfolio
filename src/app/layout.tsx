@@ -1,6 +1,5 @@
 import Navbar from "@components/Navbar";
 import type { Metadata } from "next";
-import { lato } from "./fonts";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -16,7 +15,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fr">
-      <body className={lato.className}>
+      <body>
         <Navbar />
 
         {children}
