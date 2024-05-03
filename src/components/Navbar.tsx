@@ -69,7 +69,7 @@ const NavbarLink = ({ href, label, className }: NavbarLinkProps) => {
       href={href}
       className={cn(
         "font-bold text-lg border-transparent border-b-2 transition-colors",
-        "hover:border-alabaster-50",
+        "hover:border-alabaster-50 delay-0 ease-in-out",
         className
       )}
     >
@@ -172,15 +172,18 @@ const Navbar = () => {
         <div className="hidden md:block">
           <nav className="flex items-center space-x-14 ">
             {links.map((link, index) => (
-              <NavbarLink
+              <div
                 key={index}
-                href={link.href}
-                label={link.label}
-                className={cn(
-                  `animate-slide-bottom ${getDelay(index)}`,
-                  currentPath === link.href && "border-green-500"
-                )}
-              />
+                className={`animate-slide-bottom ${getDelay(index)}`}
+              >
+                <NavbarLink
+                  href={link.href}
+                  label={link.label}
+                  className={cn(
+                    currentPath === link.href && "border-green-500"
+                  )}
+                />
+              </div>
             ))}
           </nav>
         </div>
