@@ -1,7 +1,6 @@
 import Image from "next/image";
 
 import Diamond from "@/components/Diamond";
-import SocialLinks from "@/components/SocialLinks";
 import { cn } from "@/lib/utils";
 
 const Home = () => {
@@ -63,7 +62,6 @@ const Home = () => {
           className="w-full h-auto"
         />
       </div>
-      <SocialLinks />
     </main>
   );
 };

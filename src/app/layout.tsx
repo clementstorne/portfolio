@@ -1,3 +1,4 @@
+import SocialLinks from "@/components/SocialLinks";
 import Navbar from "@components/Navbar";
 import type { Metadata } from "next";
 import { Lato, Montserrat } from "next/font/google";
@@ -31,6 +32,8 @@ export default function RootLayout({
         <Navbar />
 
         {children}
+
+        <SocialLinks />
       </body>
     </html>
   );
