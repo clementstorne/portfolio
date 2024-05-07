@@ -3,7 +3,13 @@ import Image from "next/image";
 
 const About = () => {
   return (
-    <main className={cn("min-h-screen mx-auto max-w-285", "mt-22", "md:mt-28")}>
+    <main
+      className={cn(
+        "min-h-screen mx-auto max-w-285",
+        "mt-22 mb-8 space-y-4",
+        "md:mt-28"
+      )}
+    >
       <h1 className="animate-fade-in-left">Qui suis-je ?</h1>
 
       <section

@@ -119,6 +119,9 @@ const config = {
         "2000": "2000ms",
         "2100": "2100ms",
         "2200": "2200ms",
+        "2300": "2300ms",
+        "2400": "2400ms",
+        "2500": "2500ms",
       },
       fontFamily: {
         montserrat: ["var(--font-montserrat)"],
