@@ -146,8 +146,9 @@ const Navbar = () => {
   return (
     <header
       className={cn(
-        "fixed top-0 w-full h-16 py-2 px-5 z-10",
-        "md:h-20 md:py-4 md:px-14",
+        "fixed top-0 left-0 right-0 z-10",
+        "h-16 py-2 px-5",
+        "lg:h-20 lg:py-4 lg:px-14",
         "flex items-center justify-between",
         isOpen && "bg-blue-950/95",
         showBackground && "bg-blue-950/95"
@@ -164,12 +165,12 @@ const Navbar = () => {
         </Link>
 
         <BurgerButton
-          className="md:hidden -mr-2 animate-slide-bottom"
+          className="lg:hidden absolute right-5 animate-slide-bottom"
           isOpen={isOpen}
           onClick={handleDrawer}
         />
 
-        <div className="hidden md:block">
+        <div className="hidden lg:block">
           <nav className="flex items-center space-x-14 ">
             {links.map((link, index) => (
               <div
@@ -191,7 +192,7 @@ const Navbar = () => {
 
       <nav
         className={cn(
-          "fixed top-16 left-0 w-full h-full bg-blue-950/95 overflow-auto",
+          "fixed top-16 left-0 right-0 h-full bg-blue-950/95 overflow-auto",
           "flex flex-col justify-start items-center space-y-8 py-8",
           "transform ease-in-out transition-all duration-300",
           isOpen && "translate-y-0",

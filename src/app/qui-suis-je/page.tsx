@@ -5,17 +5,29 @@ const About = () => {
   return (
     <main
       className={cn(
-        "min-h-screen mx-auto max-w-285",
-        "mt-22 mb-8 space-y-4",
-        "md:mt-28"
+        "min-h-screen max-w-240 mb-8",
+        "mt-20 mx-5 space-y-14",
+        "md:mx-8",
+        "lg:mt-28 lg:mx-auto"
       )}
     >
       <h1 className="animate-fade-in-left">Qui suis-je ?</h1>
 
       <section
-        className={cn("w-full mt-4", "grid grid-cols-12 gap-5 items-center")}
+        className={cn(
+          "w-full",
+          "flex flex-col items-center space-y-14",
+          "md:grid md:grid-cols-8 md:gap-4 md:space-y-0",
+          "lg:grid-cols-12 lg:gap-5"
+        )}
       >
-        <div className="col-span-9 space-y-2 animate-fade-in-left delay-500">
+        <div
+          className={cn(
+            "animate-fade-in-left delay-500 space-y-4",
+            "md:col-span-6",
+            "lg:col-span-9"
+          )}
+        >
           <h2>À propos de moi</h2>
           <p>
             Je suis Clément STORNE, un développeur front-end passionné par
@@ -28,7 +40,14 @@ const About = () => {
             ligne de code que j&apos;écris.
           </p>
         </div>
-        <div className="col-span-3 animate-fade-in-right delay-800">
+        <div
+          className={cn(
+            "animate-fade-in-right delay-800",
+            "w-full",
+            "md:col-span-2",
+            "lg:col-span-3"
+          )}
+        >
           <Image
             src="/clement-storne.png"
             alt="Clément Storne"
@@ -39,7 +58,9 @@ const About = () => {
         </div>
       </section>
 
-      <section className={cn("w-full mt-4 animate-fade-in-left delay-1200")}>
+      <section
+        className={cn("w-full animate-fade-in-left delay-1200 space-y-4")}
+      >
         <h2>Compétences et expériences</h2>
         <p>
           Mon domaine d&apos;application en tant que freelance couvre divers
@@ -54,9 +75,21 @@ const About = () => {
       </section>
 
       <section
-        className={cn("w-full mt-4", "grid grid-cols-12 gap-5 items-center")}
+        className={cn(
+          "w-full",
+          "flex flex-col items-center space-y-14",
+          "md:grid md:grid-cols-8 md:gap-4 md:space-y-0",
+          "lg:grid-cols-12 lg:gap-5"
+        )}
       >
-        <div className="col-span-5 animate-fade-in-left delay-1900">
+        <div
+          className={cn(
+            "animate-fade-in-left delay-1900",
+            "w-full",
+            "md:col-span-3",
+            "lg:col-span-5"
+          )}
+        >
           <Image
             src="/teamwork.png"
             alt="Travail d'équipe"
@@ -65,7 +98,13 @@ const About = () => {
             className="w-full h-auto"
           />
         </div>
-        <div className="col-span-7 space-y-2 animate-fade-in-right delay-1600">
+        <div
+          className={cn(
+            "animate-fade-in-right delay-1600 space-y-4",
+            "md:col-span-5",
+            "lg:col-span-7"
+          )}
+        >
           <h2>Valeurs et engagement</h2>
           <p>
             Je suis guidé par la rigueur dans mon travail, en m&apos;efforçant

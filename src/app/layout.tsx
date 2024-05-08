@@ -1,7 +1,7 @@
 import SocialLinks from "@/components/SocialLinks";
 import Navbar from "@components/Navbar";
 import type { Metadata } from "next";
-import { Lato, Montserrat } from "next/font/google";
+import { Montserrat, Rubik } from "next/font/google";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -15,10 +15,10 @@ const montserrat = Montserrat({
   variable: "--font-montserrat",
 });
 
-const lato = Lato({
-  weight: ["100", "300", "400", "700", "900"],
+const rubik = Rubik({
+  weight: ["300", "400", "500", "600", "700", "800", "900"],
   subsets: ["latin"],
-  variable: "--font-lato",
+  variable: "--font-rubik",
 });
 
 export default function RootLayout({
@@ -28,7 +28,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fr">
-      <body className={`${lato.variable} ${montserrat.variable}`}>
+      <body className={`${rubik.variable} ${montserrat.variable}`}>
         <Navbar />
 
         {children}

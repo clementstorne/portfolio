@@ -4,24 +4,28 @@
 
 @layer base {
   body {
-    @apply bg-gradient-to-b from-blue-700 to-blue-950 text-alabaster-50 font-lato;
+    @apply bg-gradient-to-b from-blue-700 to-blue-950 text-alabaster-50 font-rubik font-light;
   }
 
   h1,
   h2 {
-    @apply font-montserrat font-bold;
+    @apply font-montserrat;
   }
 
   h1 {
-    @apply text-5xl;
+    @apply font-bold text-3xl md:text-5xl;
   }
 
   h2 {
-    @apply text-4xl font-semibold;
+    @apply font-semibold text-2xl md:text-4xl;
   }
 
   a {
     @apply hover:text-alabaster-100;
+  }
+
+  p {
+    @apply text-justify;
   }
 }
 

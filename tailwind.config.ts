@@ -125,12 +125,13 @@ const config = {
       },
       fontFamily: {
         montserrat: ["var(--font-montserrat)"],
-        lato: ["var(--font-lato)"],
+        rubik: ["var(--font-rubik)"],
       },
       spacing: {
         "22": "88px",
       },
       maxWidth: {
+        "240": "960px",
         "285": "1140px",
       },
     },
