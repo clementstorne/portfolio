@@ -7,19 +7,19 @@ const Home = () => {
   return (
     <main
       className={cn(
-        "min-h-screen mx-auto max-w-285",
-        "flex flex-col items-center mt-22 mx-5 space-y-6",
-        "flex md:flex-row md:mt-0 md:mx-0 md:space-x-5 md:space-y-0"
+        "min-h-screen max-w-240 flex justify-center items-center",
+        "flex-col mx-5 space-y-6",
+        "md:flex-row md:mt-0 md:mx-8 md:space-x-5 md:space-y-0",
+        "lg:mx-auto"
       )}
     >
-      <section
-        className={cn("w-full space-y-2 text-center", "md:w-1/2 md:space-y-8")}
-      >
+      <section className={cn("w-full space-y-8 text-center", "md:w-1/2")}>
         <h1
           className={cn(
-            "uppercase animate-fade-in-left",
-            "text-[40px] tracking-[.22em]",
-            "md:text-[72px]"
+            "uppercase tracking-[.2em] animate-fade-in-left",
+            "text-5xl",
+            "md:text-6xl",
+            "lg:text-7xl"
           )}
         >
           Clément STORNE
@@ -39,19 +39,20 @@ const Home = () => {
         </div>
         <p
           className={cn(
-            "font-bold animate-fade-in-left delay-400",
-            "text-[16px] tracking-[.34em]",
-            "md:text-[24px] md:tracking-[.43em]"
+            "font-bold tracking-[.3em] text-center animate-fade-in-left delay-400",
+            "text-xl",
+            "md:text-2xl",
+            "lg:text-3xl"
           )}
         >
-          Développeur Front-End
+          Développeur <span>Front-End</span>
         </p>
       </section>
       <div
         className={cn(
           "flex items-center delay-600 animate-fade-in-right",
-          "w-full",
-          "md:w-1/2"
+          "w-full max-w-[383px]",
+          "md:max-w-[465px]"
         )}
       >
         <Image
