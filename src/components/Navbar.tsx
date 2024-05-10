@@ -20,7 +20,7 @@ const BurgerButton = ({ className, isOpen, onClick }: BurgerButtonProps) => {
   return (
     <Button
       variant={"ghost"}
-      className={cn("p-2", className)}
+      className={cn("p-0", className)}
       aria-label="Open Menu"
       onClick={onClick}
     >
@@ -87,6 +87,10 @@ const Navbar = () => {
   const handleDrawer = () => {
     setIsOpen(!isOpen);
   };
+
+  useEffect(() => {
+    setIsOpen(false);
+  }, [currentPath]);
 
   useEffect(() => {
     const handleEscKeyPress = (e: KeyboardEvent) => {

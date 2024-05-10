@@ -22,21 +22,33 @@ import {
   SiVuedotjs,
 } from "react-icons/si";
 
-const About = () => {
+const Skills = () => {
   return (
     <main
       className={cn(
-        "min-h-screen mx-auto max-w-285",
-        "mt-22 mb-8 space-y-4",
-        "md:mt-28"
+        "min-h-screen max-w-240 mb-8",
+        "mt-20 mx-5 space-y-14",
+        "md:mx-8",
+        "lg:mt-28 lg:mx-auto"
       )}
     >
       <h1 className="animate-fade-in-left">Mes compétences</h1>
 
       <div
-        className={cn("w-full mt-4", "grid grid-cols-12 gap-5 items-center")}
+        className={cn(
+          "w-full",
+          "flex flex-col items-center gap-14",
+          "md:grid md:grid-cols-8 md:gap-4 md:space-y-0",
+          "lg:grid-cols-12 lg:gap-5"
+        )}
       >
-        <div className="col-span-7 space-y-8">
+        <div
+          className={cn(
+            "space-y-14",
+            "md:col-span-5 md:space-y-8",
+            "lg:col-span-7"
+          )}
+        >
           <section className="space-y-4 animate-fade-in-left delay-500">
             <h2>Front-End</h2>
             <p>
@@ -45,7 +57,7 @@ const About = () => {
               ainsi que les outils de styling pour la conception et la mise en
               forme des éléments visuels.
             </p>
-            <div className="flex space-x-4">
+            <div className="flex gap-x-4 gap-y-2 flex-wrap">
               <SiJavascript size={40} />
               <SiTypescript size={40} />
               <SiReact size={40} />
@@ -63,7 +75,7 @@ const About = () => {
               back-end des applications web, la gestion des bases de données et
               la création d&apos;API.
             </p>
-            <div className="flex space-x-4">
+            <div className="flex gap-x-4 gap-y-2 flex-wrap">
               <SiNodedotjs size={40} />
               <SiExpress size={40} />
               <SiPrisma size={40} />
@@ -72,7 +84,13 @@ const About = () => {
             </div>
           </section>
         </div>
-        <div className="col-span-5 animate-fade-in-right delay-1300">
+        <div
+          className={cn(
+            "animate-fade-in-right delay-1300",
+            "md:col-span-3",
+            "lg:col-span-5"
+          )}
+        >
           <Image
             src="/competences-1.png"
             alt="Clément Storne"
@@ -84,9 +102,21 @@ const About = () => {
       </div>
 
       <div
-        className={cn("w-full mt-4", "grid grid-cols-12 gap-5 items-center")}
+        className={cn(
+          "w-full",
+          "flex flex-col-reverse items-center gap-14",
+          "md:grid md:grid-cols-8 md:gap-4 md:space-y-0",
+          "lg:grid-cols-12 lg:gap-5"
+        )}
       >
-        <div className="col-span-5 animate-fade-in-left delay-2500">
+        <div
+          className={cn(
+            "delay-2500",
+            "animate-fade-in-right",
+            "md:animate-fade-in-left md:col-span-3",
+            "lg:col-span-5"
+          )}
+        >
           <Image
             src="/competences-2.png"
             alt="Travail d'équipe"
@@ -95,15 +125,27 @@ const About = () => {
             className="w-full h-auto"
           />
         </div>
-        <div className="col-span-7 space-y-8">
-          <section className="space-y-4 animate-fade-in-right delay-1700">
+        <div
+          className={cn(
+            "space-y-14",
+            "md:col-span-5 md:space-y-8",
+            "lg:col-span-7"
+          )}
+        >
+          <section
+            className={cn(
+              "space-y-4 delay-1700",
+              "animate-fade-in-left",
+              "md:animate-fade-in-right"
+            )}
+          >
             <h2>Développement & Test</h2>
             <p>
               Dans cette catégorie, vous trouverez les outils utilisés pour
               développer et tester des applications web, incluant les frameworks
               de test et les outils de développement rapide.
             </p>
-            <div className="flex space-x-4">
+            <div className="flex gap-x-4 gap-y-2 flex-wrap">
               <SiJest size={40} />
               <SiVitest size={40} />
               <SiVite size={40} />
@@ -111,14 +153,19 @@ const About = () => {
             </div>
           </section>
 
-          <section className="space-y-4 animate-fade-in-right delay-2100">
+          <section
+            className={cn(
+              "space-y-4 animate-fade-in-left delay-2100",
+              "md:animate-fade-in-right"
+            )}
+          >
             <h2>Collaboration & Design</h2>
             <p>
               Ces outils jouent un rôle essentiel dans la collaboration en
               développement logiciel, de la gestion de version à la conception
               et au prototypage des interfaces utilisateur.
             </p>
-            <div className="flex space-x-4">
+            <div className="flex gap-x-4 gap-y-2 flex-wrap">
               <SiGithub size={40} />
               <SiFigma size={40} />
               <SiAdobeillustrator size={40} />
@@ -130,4 +177,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default Skills;

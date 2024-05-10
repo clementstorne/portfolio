@@ -84,9 +84,9 @@ const About = () => {
       >
         <div
           className={cn(
-            "animate-fade-in-left delay-1900",
             "w-full",
-            "md:col-span-3",
+            "animate-fade-in-right delay-1600",
+            "md:col-span-3 md:animate-fade-in-left md:delay-1900",
             "lg:col-span-5"
           )}
         >
@@ -100,8 +100,9 @@ const About = () => {
         </div>
         <div
           className={cn(
-            "animate-fade-in-right delay-1600 space-y-4",
-            "md:col-span-5",
+            "space-y-4",
+            "animate-fade-in-left delay-1900",
+            "md:col-span-5 md:animate-fade-in-right md:delay-1600",
             "lg:col-span-7"
           )}
         >

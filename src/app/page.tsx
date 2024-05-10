@@ -8,7 +8,7 @@ const Home = () => {
     <main
       className={cn(
         "min-h-screen max-w-240 flex justify-center items-center",
-        "flex-col mx-5 space-y-6",
+        "flex-col mt-8 mx-5 space-y-6",
         "md:flex-row md:mt-0 md:mx-8 md:space-x-5 md:space-y-0",
         "lg:mx-auto"
       )}
