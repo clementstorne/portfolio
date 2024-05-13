@@ -60,6 +60,9 @@ const config = {
         950: "#252525",
       },
     },
+    boxShadow: {
+      DEFAULT: "4PX 4PX 4PX 0 rgba(37, 37, 37, 0.3)",
+    },
     extend: {
       keyframes: {
         "accordion-down": {
@@ -134,6 +137,7 @@ const config = {
         "240": "960px",
         "285": "1140px",
       },
+      borderWidth: { "3": "3px" },
     },
   },
   plugins: [require("tailwindcss-animate")],

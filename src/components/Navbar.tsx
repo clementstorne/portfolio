@@ -19,7 +19,7 @@ type BurgerButtonProps = {
 const BurgerButton = ({ className, isOpen, onClick }: BurgerButtonProps) => {
   return (
     <Button
-      variant={"ghost"}
+      variant={"link"}
       className={cn("p-0", className)}
       aria-label="Open Menu"
       onClick={onClick}

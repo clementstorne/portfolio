@@ -93,7 +93,7 @@ const Skills = () => {
         >
           <Image
             src="/competences-1.png"
-            alt="Clément Storne"
+            alt="Développement d'un site internet sur ordinateur, tablette et smartphone"
             width={489}
             height={525}
             className="w-full h-auto"
@@ -111,15 +111,14 @@ const Skills = () => {
       >
         <div
           className={cn(
-            "delay-2500",
-            "animate-fade-in-right",
-            "md:animate-fade-in-left md:col-span-3",
+            "animate-fade-in-right delay-2500",
+            "md:animate-fade-in-left md:delay-2500 md:col-span-3",
             "lg:col-span-5"
           )}
         >
           <Image
             src="/competences-2.png"
-            alt="Travail d'équipe"
+            alt="Tests unitaires de code"
             width={536}
             height={490}
             className="w-full h-auto"
@@ -134,9 +133,9 @@ const Skills = () => {
         >
           <section
             className={cn(
-              "space-y-4 delay-1700",
-              "animate-fade-in-left",
-              "md:animate-fade-in-right"
+              "space-y-4",
+              "animate-fade-in-left delay-1700",
+              "md:animate-fade-in-right md:delay-1700"
             )}
           >
             <h2>Développement & Test</h2>
@@ -155,8 +154,9 @@ const Skills = () => {
 
           <section
             className={cn(
-              "space-y-4 animate-fade-in-left delay-2100",
-              "md:animate-fade-in-right"
+              "space-y-4",
+              "animate-fade-in-left delay-2100",
+              "md:animate-fade-in-right md:delay-2100"
             )}
           >
             <h2>Collaboration & Design</h2>
