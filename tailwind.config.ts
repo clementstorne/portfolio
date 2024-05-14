@@ -89,6 +89,10 @@ const config = {
           from: { transform: "translateY(-300%)" },
           to: { transform: "translateY(0)" },
         },
+        "scale-in-center": {
+          from: { opacity: "1", transform: "scale(0)" },
+          to: { opacity: "1", transform: "scale(1)" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
@@ -101,6 +105,8 @@ const config = {
           "slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both",
         "slide-bottom":
           "slide-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both",
+        "scale-in-center":
+          "scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both",
       },
       transitionDelay: {
         "400": "400ms",

@@ -1,5 +1,4 @@
-import projects from "@/data/projects";
-import Project from "@components/Project";
+import ProjectsCarousel from "@/components/ProjectsCarousel";
 import { cn } from "@lib/utils";
 
 const Projects = () => {
@@ -14,17 +13,8 @@ const Projects = () => {
     >
       <h1 className="animate-fade-in-left">Mes projets</h1>
 
-      <div
-        className={cn(
-          "w-full",
-          "flex flex-col items-center gap-14"
-          // "md:grid md:grid-cols-8 md:gap-4 md:space-y-0",
-          // "lg:grid-cols-12 lg:gap-5"
-        )}
-      >
-        {projects.map((project) => (
-          <Project key={project.title} {...project} />
-        ))}
+      <div className={cn("w-full")}>
+        <ProjectsCarousel />
       </div>
     </main>
   );

@@ -1,3 +1,4 @@
+import { cn } from "@/lib/utils";
 import { ProjectData } from "@/types";
 import { buttonVariants } from "@components/ui/button";
 import Image from "next/image";
@@ -76,12 +77,14 @@ const Project = ({
   };
 
   return (
-    <div className="grid grid-cols-2 gap-5 items-center">
+    <div
+      className={cn("grid grid-cols-1 gap-5 items-center", "md:grid-cols-2")}
+    >
       <Image
         src={image}
         alt={title}
-        width={489}
-        height={525}
+        width={600}
+        height={600}
         className="w-full h-auto"
       />
       <div className="space-y-4">
