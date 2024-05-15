@@ -33,4 +33,12 @@
   .text-balance {
     text-wrap: balance;
   }
+
+  .fade-in-left {
+    @apply animate-in fade-in slide-in-from-left-28 duration-700 ease-fade-in fill-mode-both;
+  }
+
+  .fade-in-right {
+    @apply animate-in fade-in slide-in-from-right-28 duration-700 ease-fade-in fill-mode-both;
+  }
 }

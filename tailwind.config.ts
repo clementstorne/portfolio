@@ -20,6 +20,12 @@ const config = {
       current: "currentColor",
       black: "#252525",
       white: "#F9F9F9",
+      red: {
+        300: "#fca5a5",
+        500: "#ef4444",
+        700: "#b91c1c",
+        950: "#450a0a",
+      },
       blue: {
         50: "#E9FEFF",
         100: "#C9FAFD",
@@ -131,6 +137,9 @@ const config = {
         "2300": "2300ms",
         "2400": "2400ms",
         "2500": "2500ms",
+      },
+      transitionTimingFunction: {
+        "fade-in": "cubic-bezier(0.390, 0.575, 0.565, 1.000)",
       },
       fontFamily: {
         montserrat: ["var(--font-montserrat)"],

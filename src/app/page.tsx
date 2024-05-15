@@ -16,7 +16,8 @@ const Home = () => {
       <section className={cn("w-full space-y-8 text-center", "md:w-1/2")}>
         <h1
           className={cn(
-            "uppercase tracking-[.2em] animate-fade-in-left",
+            "fade-in-left",
+            "uppercase tracking-[.2em]",
             "text-5xl",
             "md:text-6xl",
             "lg:text-7xl"
@@ -26,7 +27,8 @@ const Home = () => {
         </h1>
         <div
           className={cn(
-            "flex justify-center delay-200 animate-fade-in-left",
+            "fade-in-left delay-200",
+            "flex justify-center",
             "h-4 gap-x-4",
             "md:h-6 md:gap-x-6"
           )}
@@ -39,7 +41,8 @@ const Home = () => {
         </div>
         <p
           className={cn(
-            "font-bold tracking-[.3em] text-center animate-fade-in-left delay-400",
+            "fade-in-left delay-400",
+            "font-bold tracking-[.3em] text-center",
             "text-xl",
             "md:text-2xl",
             "lg:text-3xl"
@@ -50,7 +53,8 @@ const Home = () => {
       </section>
       <div
         className={cn(
-          "flex items-center delay-600 animate-fade-in-right",
+          "fade-in-right delay-600",
+          "flex items-center",
           "w-full max-w-[383px]",
           "md:max-w-[465px]"
         )}

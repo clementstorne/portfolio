@@ -9,7 +9,7 @@ const PROJECTS: ProjectData[] = [
       "Situé à Ozoir-la-Ferrière (77), le Domaine de Lipica offre une gamme complète d'activités équestres, de l'initiation à la compétition, enseignées par des moniteurs expérimentés.",
     mission:
       "Le domaine de Lipica m'a confié la mission de procéder à une refonte  complète de leur site internet existant, dans le but de moderniser  l'expérience utilisateur. J'ai donc créé une interface intuitive et esthétique, mettant en  valeur les attractions et les services du domaine. De plus, j'ai  développé un espace d'administration sur mesure permettant une gestion  autonome des contenus du site, offrant ainsi à l'équipe de Lipica un  contrôle total sur leur plateforme en ligne.",
-    url: "http://www.ozoir-equitation.com/",
+    url: "https://domaine-de-lipica.vercel.app/",
     code: "https://github.com/clementstorne/domaine-de-lipica",
   },
   {
