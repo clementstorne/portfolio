@@ -7,7 +7,7 @@ const SocialLinks = () => {
     <div
       className={cn(
         "hidden",
-        "fixed bottom-0 lg:flex flex-col items-center space-y-6 delay-1000 right-8 animate-slide-top"
+        "fixed bottom-0 lg:flex flex-col items-center space-y-6 delay-1000 right-8 slide-in-top"
       )}
     >
       <Link

@@ -85,7 +85,10 @@ const ContactForm = () => {
 
   return (
     <Form {...form}>
-      <form onSubmit={form.handleSubmit(onSubmit)} className="w-full space-y-4">
+      <form
+        onSubmit={form.handleSubmit(onSubmit)}
+        className="w-full space-y-4 fade-in-left delay-500"
+      >
         <FormField
           control={form.control}
           name="name"

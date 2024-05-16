@@ -41,4 +41,16 @@
   .fade-in-right {
     @apply animate-in fade-in slide-in-from-right-28 duration-700 ease-fade-in fill-mode-both;
   }
+
+  .slide-in-bottom {
+    @apply animate-in slide-in-from-top-[300%] duration-500 ease-slide-in fill-mode-both;
+  }
+
+  .slide-in-top {
+    @apply animate-in slide-in-from-bottom duration-500 ease-slide-in fill-mode-both;
+  }
+
+  .scale-in {
+    @apply animate-in zoom-in duration-500 ease-slide-in fill-mode-both;
+  }
 }

@@ -32,7 +32,7 @@ const Skills = () => {
         "lg:mt-28 lg:mx-auto"
       )}
     >
-      <h1 className="animate-fade-in-left">Mes compétences</h1>
+      <h1 className="fade-in-left">Mes compétences</h1>
 
       <div
         className={cn(
@@ -49,7 +49,7 @@ const Skills = () => {
             "lg:col-span-7"
           )}
         >
-          <section className="space-y-4 animate-fade-in-left delay-500">
+          <section className="space-y-4 fade-in-left delay-500">
             <h2>Front-End</h2>
             <p>
               Ces technologies englobent les langages de programmation et les
@@ -68,7 +68,7 @@ const Skills = () => {
             </div>
           </section>
 
-          <section className="space-y-4 animate-fade-in-left delay-900">
+          <section className="space-y-4 fade-in-left delay-900">
             <h2>Back-End</h2>
             <p>
               Ces outils et frameworks sont employés pour le développement du
@@ -86,7 +86,7 @@ const Skills = () => {
         </div>
         <div
           className={cn(
-            "animate-fade-in-right delay-1300",
+            "fade-in-right delay-1300",
             "md:col-span-3",
             "lg:col-span-5"
           )}
@@ -111,8 +111,8 @@ const Skills = () => {
       >
         <div
           className={cn(
-            "animate-fade-in-right delay-2500",
-            "md:animate-fade-in-left md:delay-2500 md:col-span-3",
+            "fade-in-right delay-2500",
+            "md:fade-in-left md:delay-2500 md:col-span-3",
             "lg:col-span-5"
           )}
         >
@@ -134,8 +134,8 @@ const Skills = () => {
           <section
             className={cn(
               "space-y-4",
-              "animate-fade-in-left delay-1700",
-              "md:animate-fade-in-right md:delay-1700"
+              "fade-in-left delay-1700",
+              "md:fade-in-right md:delay-1700"
             )}
           >
             <h2>Développement & Test</h2>
@@ -155,8 +155,8 @@ const Skills = () => {
           <section
             className={cn(
               "space-y-4",
-              "animate-fade-in-left delay-2100",
-              "md:animate-fade-in-right md:delay-2100"
+              "fade-in-left delay-2100",
+              "md:fade-in-right md:delay-2100"
             )}
           >
             <h2>Collaboration & Design</h2>

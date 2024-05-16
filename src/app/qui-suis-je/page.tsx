@@ -11,7 +11,7 @@ const About = () => {
         "lg:mt-28 lg:mx-auto"
       )}
     >
-      <h1 className="animate-fade-in-left">Qui suis-je ?</h1>
+      <h1 className="fade-in-left">Qui suis-je ?</h1>
 
       <section
         className={cn(
@@ -23,7 +23,7 @@ const About = () => {
       >
         <div
           className={cn(
-            "animate-fade-in-left delay-500 space-y-4",
+            "fade-in-left delay-500 space-y-4",
             "md:col-span-6",
             "lg:col-span-9"
           )}
@@ -42,7 +42,7 @@ const About = () => {
         </div>
         <div
           className={cn(
-            "animate-fade-in-right delay-800",
+            "fade-in-right delay-800",
             "w-full",
             "md:col-span-2",
             "lg:col-span-3"
@@ -58,9 +58,7 @@ const About = () => {
         </div>
       </section>
 
-      <section
-        className={cn("w-full animate-fade-in-left delay-1200 space-y-4")}
-      >
+      <section className={cn("w-full fade-in-left delay-1200 space-y-4")}>
         <h2>Compétences et expériences</h2>
         <p>
           Mon domaine d&apos;application en tant que freelance couvre divers
@@ -85,8 +83,8 @@ const About = () => {
         <div
           className={cn(
             "w-full",
-            "animate-fade-in-right delay-1600",
-            "md:col-span-3 md:animate-fade-in-left md:delay-1900",
+            "fade-in-right delay-1600",
+            "md:col-span-3 md:fade-in-left md:delay-1900",
             "lg:col-span-5"
           )}
         >
@@ -101,8 +99,8 @@ const About = () => {
         <div
           className={cn(
             "space-y-4",
-            "animate-fade-in-left delay-1900",
-            "md:col-span-5 md:animate-fade-in-right md:delay-1600",
+            "fade-in-left delay-1900",
+            "md:col-span-5 md:fade-in-right md:delay-1600",
             "lg:col-span-7"
           )}
         >

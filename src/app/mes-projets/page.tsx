@@ -11,7 +11,7 @@ const Projects = () => {
         "lg:mt-28 lg:mx-auto"
       )}
     >
-      <h1 className="animate-fade-in-left">Mes projets</h1>
+      <h1 className="fade-in-left">Mes projets</h1>
 
       <div className={cn("w-full")}>
         <ProjectsCarousel />

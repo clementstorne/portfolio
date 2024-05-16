@@ -45,7 +45,7 @@ const ProjectsCarousel = () => {
       opts={{
         loop: true,
       }}
-      className="animate-scale-in-center delay-500"
+      className="fade-in-left md:scale-in delay-500"
     >
       <CarouselContent>
         {projects.map((project, index) => (

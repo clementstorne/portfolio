@@ -150,7 +150,7 @@ const Navbar = () => {
   return (
     <header
       className={cn(
-        "fixed top-0 left-0 right-0 z-10",
+        "fixed top-0 w-screen z-10",
         "h-16 py-2 px-5",
         "lg:h-20 lg:py-4 lg:px-14",
         "flex items-center justify-between",
@@ -164,12 +164,12 @@ const Navbar = () => {
             src={Logo}
             alt="Clément Storne"
             priority={true}
-            className="w-auto h-full animate-slide-bottom"
+            className="w-auto h-full slide-in-bottom"
           />
         </Link>
 
         <BurgerButton
-          className="lg:hidden absolute right-5 animate-slide-bottom"
+          className="lg:hidden absolute right-5 slide-in-bottom"
           isOpen={isOpen}
           onClick={handleDrawer}
         />
@@ -177,10 +177,7 @@ const Navbar = () => {
         <div className="hidden lg:block">
           <nav className="flex items-center space-x-14 ">
             {links.map((link, index) => (
-              <div
-                key={index}
-                className={`animate-slide-bottom ${getDelay(index)}`}
-              >
+              <div key={index} className={`slide-in-bottom ${getDelay(index)}`}>
                 <NavbarLink
                   href={link.href}
                   label={link.label}

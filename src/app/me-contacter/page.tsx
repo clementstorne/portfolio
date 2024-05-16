@@ -12,7 +12,7 @@ const Contact = () => {
         "lg:mt-28 lg:mx-auto"
       )}
     >
-      <h1 className="animate-fade-in-left">Me contacter</h1>
+      <h1 className="fade-in-left">Me contacter</h1>
 
       <section
         className={cn(
@@ -23,7 +23,7 @@ const Contact = () => {
         <ContactForm />
         <div
           className={cn(
-            "flex items-center delay-600 animate-fade-in-right",
+            "flex items-center delay-900 fade-in-right",
             "w-full max-w-[383px]",
             "md:max-w-[465px]"
           )}
