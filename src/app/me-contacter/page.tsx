@@ -29,8 +29,8 @@ const Contact = () => {
           )}
         >
           <Image
-            src="/contact.png"
-            alt="Personne en train de saisir du texte sur son smartphone"
+            src="/contact-developpeur-web-smartphone.webp"
+            alt="Mains utilisant un smartphone à côté d'un ordinateur portable pour contacter un développeur web"
             width={631}
             height={583}
             className="w-full h-auto"

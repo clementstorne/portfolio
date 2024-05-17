@@ -49,8 +49,8 @@ const About = () => {
           )}
         >
           <Image
-            src="/clement-storne.png"
-            alt="Clément Storne"
+            src="/photo-clement-storne-developpeur-web.webp"
+            alt="Photo de Clément Storne, développeur web"
             width={281}
             height={268}
             className="w-full h-auto"
@@ -89,8 +89,8 @@ const About = () => {
           )}
         >
           <Image
-            src="/teamwork.png"
-            alt="Travail d'équipe"
+            src="/presentation-travail-equipe-collaboration.webp"
+            alt="Équipe de développeurs collaborant autour d'une table avec des ordinateurs portables"
             width={498}
             height={414}
             className="w-full h-auto"

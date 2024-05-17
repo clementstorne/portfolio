@@ -3,7 +3,8 @@ import { ProjectData } from "@/types";
 const PROJECTS: ProjectData[] = [
   {
     title: "Domaine de Lipica",
-    image: "/domaine-de-lipica.png",
+    image: "/domaine-de-lipica-site-internet.webp",
+    alt: "Refonte du site internet du Domaine de Lipica à Ozoir-la-Ferrière",
     technologies: ["typescript", "next", "tailwind", "prisma", "mysql"],
     introduction:
       "Situé à Ozoir-la-Ferrière (77), le Domaine de Lipica offre une gamme complète d'activités équestres, de l'initiation à la compétition, enseignées par des moniteurs expérimentés.",
@@ -14,7 +15,8 @@ const PROJECTS: ProjectData[] = [
   },
   {
     title: "intraconnect",
-    image: "/intraconnect.png",
+    image: "intraconnect-reseau-social-entreprise.webp",
+    alt: "Interface du réseau social intraconnect favorisant la collaboration en entreprise",
     technologies: ["typescript", "next", "tailwind", "prisma", "mysql"],
     introduction:
       "intraconnect est un réseau social interne d'entreprise, favorisant la collaboration et la communication efficace entre les employés.",
@@ -25,7 +27,8 @@ const PROJECTS: ProjectData[] = [
   },
   {
     title: "Morpion",
-    image: "/morpion.png",
+    image: "/morpion-jeu-en-ligne.webp",
+    alt: "Jeu de Morpion avec algorithme minimax pour des parties contre l'ordinateur",
     technologies: ["javascript", "react", "redux", "tailwind"],
     introduction:
       "Frontend Mentor offre des défis professionnels conçus pour améliorer les compétences en codage, permettant ainsi  de développer des projets réalistes et de progresser rapidement.",

@@ -92,8 +92,8 @@ const Skills = () => {
           )}
         >
           <Image
-            src="/competences-1.png"
-            alt="Développement d'un site internet sur ordinateur, tablette et smartphone"
+            src="/presentation-competences-developpeur-web.webp"
+            alt="Écran d'ordinateur affichant du code et des pages web de produits numériques pour la présentation des compétences d'un développeur web"
             width={489}
             height={525}
             className="w-full h-auto"
@@ -117,8 +117,8 @@ const Skills = () => {
           )}
         >
           <Image
-            src="/competences-2.png"
-            alt="Tests unitaires de code"
+            src="/presentation-competences-developpeur-frontend-test-unitaire.webp"
+            alt="Écran d'ordinateur affichant des tests unitaires en JavaScript"
             width={536}
             height={490}
             className="w-full h-auto"

@@ -60,8 +60,8 @@ const Home = () => {
         )}
       >
         <Image
-          src="/home.png"
-          alt="Clément Storne"
+          src="/developpeur-web-code-laptop.webp"
+          alt="Ordinateur portable affichant du code de développement web avec une souris"
           width={597}
           height={613}
           className="w-full h-auto"

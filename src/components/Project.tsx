@@ -29,6 +29,7 @@ type ProjectProps = ProjectData;
 const Project = ({
   title,
   image,
+  alt,
   technologies,
   introduction,
   mission,
@@ -82,7 +83,7 @@ const Project = ({
     >
       <Image
         src={image}
-        alt={title}
+        alt={alt}
         width={600}
         height={600}
         className="w-full h-auto"
