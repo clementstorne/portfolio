@@ -15,7 +15,7 @@ const PROJECTS: ProjectData[] = [
   },
   {
     title: "intraconnect",
-    image: "intraconnect-reseau-social-entreprise.webp",
+    image: "/intraconnect-reseau-social-entreprise.webp",
     alt: "Interface du réseau social intraconnect favorisant la collaboration en entreprise",
     technologies: ["typescript", "next", "tailwind", "prisma", "mysql"],
     introduction:
