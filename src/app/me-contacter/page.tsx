@@ -20,7 +20,15 @@ const Contact = () => {
           "md:grid md:grid-cols-2 md:gap-5"
         )}
       >
-        <ContactForm />
+        <div className="flex flex-col space-y-5">
+          <p className="fade-in-left delay-500">
+            Vous avez un projet web en tête ? Je serais ravi de collaborer avec
+            vous pour le concrétiser.
+            <br /> Remplissez le formulaire ci-dessous et discutons de vos idées
+            !
+          </p>
+          <ContactForm />
+        </div>
         <div
           className={cn(
             "flex items-center delay-900 fade-in-right",
